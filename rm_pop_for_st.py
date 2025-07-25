@@ -86,7 +86,7 @@ with tab1:
             st.session_state.generated_graph = None  # Reset the graph
 
             # Load demo file
-            demo_data_path = r"X:\Code_Projects\Streamlit\BW_EDA\Room Type Pop by Month\2024-02 Room_Type_Popularity.xls"
+            demo_data_path = "2024-02 Room_Type_Popularity.xls"
             df = pd.read_excel(demo_data_path, sheet_name="Sheet1")
             st.session_state.uploaded_df_tab1 = df
             st.success("✅ Demo file loaded!")
@@ -295,12 +295,12 @@ with tab2:
 
             # Load demo files
             demo_files = {
-                "2024-01 Room_Type_Popularity.xls": r"X:\Code_Projects\Streamlit\BW_EDA\Room Type Pop by Month\2024-01 Room_Type_Popularity.xls",
-                "2024-02 Room_Type_Popularity.xls": r"X:\Code_Projects\Streamlit\BW_EDA\Room Type Pop by Month\2024-02 Room_Type_Popularity.xls",
-                "2024-03 Room_Type_Popularity.xls": r"X:\Code_Projects\Streamlit\BW_EDA\Room Type Pop by Month\2024-03 Room_Type_Popularity.xls",
-                "2025-01 Room_Type_Popularity.xls": r"X:\Code_Projects\Streamlit\BW_EDA\Room Type Pop by Month\2025-01 Room_Type_Popularity.xls",
-                "2025-02 Room_Type_Popularity.xls": r"X:\Code_Projects\Streamlit\BW_EDA\Room Type Pop by Month\2025-02 Room_Type_Popularity.xls",
-                "2025-03 Room_Type_Popularity.xls": r"X:\Code_Projects\Streamlit\BW_EDA\Room Type Pop by Month\2025-03 Room_Type_Popularity.xls",
+                "2024-01 Room_Type_Popularity.xls": "2024-01 Room_Type_Popularity.xls",
+                "2024-02 Room_Type_Popularity.xls": "2024-02 Room_Type_Popularity.xls",
+                "2024-03 Room_Type_Popularity.xls": "2024-03 Room_Type_Popularity.xls",
+                "2025-01 Room_Type_Popularity.xls": "2025-01 Room_Type_Popularity.xls",
+                "2025-02 Room_Type_Popularity.xls": "2025-02 Room_Type_Popularity.xls",
+                "2025-03 Room_Type_Popularity.xls": "2025-03 Room_Type_Popularity.xls",
             }
             for filename, path in demo_files.items():
                 date_match_ymd = re.search(r"(\d{4}-\d{2}-\d{2})", filename)

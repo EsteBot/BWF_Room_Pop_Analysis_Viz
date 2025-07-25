@@ -369,7 +369,7 @@ with tab2:
         # --------- UI OPTIONS ---------
         with col2:
             if st.session_state.uploaded_data:
-                if st.button("📊 Generate Graphs"):
+                if st.button("⚙️ Generate Graphs"):
                     if len(st.session_state.uploaded_data) < 2:
                         st.warning("Please upload a minimum of 2 files to enable comparison charts.")
                     else:
